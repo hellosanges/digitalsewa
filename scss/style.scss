@@ -1,0 +1,145 @@
+$body-bg: #272727;
+$body-color: #fff;
+//importing main files
+@import "../node_modules/bootstrap/scss/bootstrap";
+.nva-link {
+  color: #fff;
+}
+
+.header {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  line-height: 100%;
+
+  a {
+    margin-left: 30px;
+  }
+}
+.navbar-custom {
+  .navbar-nav {
+    .nav-link {
+      color: #fff;
+
+      &:hover,
+      &:focus {
+        color: gray;
+      }
+
+      &.disabled {
+        color: $navbar-light-disabled-color;
+      }
+    }
+
+    .show > .nav-link,
+    .nav-link.active {
+      color: gray;
+    }
+  }
+}
+.navbar-toggler {
+  border: none !important
+  ;
+}
+
+.hamburger_menu {
+  span {
+    display: block;
+    width: 26px;
+    height: 2px;
+    background-color: #fff;
+    transform-origin: 3px 0.95px;
+    transition: all 300ms ease-in-out;
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+
+  &.open {
+    > span:first-child {
+      transform: rotate(45deg);
+    }
+    > span:nth-child(2) {
+      opacity: 0;
+    }
+    > span:last-child {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+@include media-breakpoint-up(xs) {
+  .header {
+    .logo img {
+      height: 2rem;
+      width: auto;
+    }
+  }
+  .owl-carousel .owl-item img {
+    margin-top: 0;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .owl-carousel .owl-item img {
+    margin-top: 0;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .header {
+    .logo img {
+      height: 3.125rem;
+      width: auto;
+    }
+  }
+  .owl-carousel .owl-item img {
+    margin-top: -20rem;
+  }
+  .overlay-text {
+    position: relative;
+    transform: translate(0, 50%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 18%,
+      rgba(255, 255, 255, 1) 77%,
+      rgba(0, 212, 255, 0) 96%
+    );
+
+    color: black;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .header {
+    .logo img {
+      height: 4.375rem;
+      width: auto;
+    }
+    .active-menu::after {
+      content: "";
+      display: block;
+      height: 0.25rem;
+      background: white;
+      position: relative;
+      bottom: -1.25rem;
+    }
+  }
+}
+
+.owl-carousel .owl-dots {
+  text-align: center;
+}
+
+.owl-carousel .owl-dots .owl-dot {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  border-radius: 50%;
+  background: white;
+}
+
+.owl-carousel .owl-dots .owl-dot.active {
+  background: #f15922;
+}
+//test
