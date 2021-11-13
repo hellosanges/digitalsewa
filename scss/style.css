@@ -12046,21 +12046,42 @@ fieldset:disabled .btn {
     height: 3.125rem;
     width: auto;
   }
-  .owl-carousel .owl-item img {
-    margin-top: -20rem;
-  }
   .overlay-text {
-    position: relative;
-    -webkit-transform: translate(0, 50%);
-            transform: translate(0, 50%);
     background: white;
-    background: -webkit-gradient(linear, left top, right top, color-stop(18%, white), color-stop(77%, white), color-stop(96%, rgba(0, 212, 255, 0)));
-    background: linear-gradient(90deg, white 18%, white 77%, rgba(0, 212, 255, 0) 96%);
+    background: -webkit-gradient(linear, left top, right top, from(white), color-stop(0%, white), to(rgba(255, 255, 255, 0.647496)));
+    background: linear-gradient(90deg, white 0%, white 0%, rgba(255, 255, 255, 0.647496) 100%);
     color: black;
+    z-index: 100;
+  }
+  .overlay-text > span,
+  .overlay-text h1,
+  .overlay-text .h1,
+  .overlay-text p {
+    margin: auto 45px;
+    text-align: center;
+  }
+  .overlay-text > span {
+    font-size: 20px;
+  }
+  .overlay-text > h1, .overlay-text > .h1 {
+    font-size: 30px;
+  }
+  .child {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
 }
 
 @media (min-width: 992px) {
+  .header .logo img {
+    height: 4.375rem;
+    width: auto;
+  }
+}
+
+@media (min-width: 1200px) {
   .header .logo img {
     height: 4.375rem;
     width: auto;
@@ -12089,5 +12110,10 @@ fieldset:disabled .btn {
 
 .owl-carousel .owl-dots .owl-dot.active {
   background: #f15922;
+}
+
+.slider-image img {
+  width: 500px !important;
+  height: auto;
 }
 /*# sourceMappingURL=style.css.map */

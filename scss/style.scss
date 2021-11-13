@@ -92,25 +92,47 @@ $body-color: #fff;
       width: auto;
     }
   }
-  .owl-carousel .owl-item img {
-    margin-top: -20rem;
-  }
   .overlay-text {
-    position: relative;
-    transform: translate(0, 50%);
     background: rgb(255, 255, 255);
     background: linear-gradient(
       90deg,
-      rgba(255, 255, 255, 1) 18%,
-      rgba(255, 255, 255, 1) 77%,
-      rgba(0, 212, 255, 0) 96%
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0.6474964985994398) 100%
     );
-
     color: black;
+    z-index: 100;
+    > span,
+    h1,
+    p {
+      margin: auto 45px;
+      text-align: center;
+    }
+
+    > span {
+      font-size: 20px;
+    }
+
+    > h1 {
+      font-size: 30px;
+    }
+  }
+  .child {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
 @include media-breakpoint-up(lg) {
+  .header {
+    .logo img {
+      height: 4.375rem;
+      width: auto;
+    }
+  }
+}
+@include media-breakpoint-up(xl) {
   .header {
     .logo img {
       height: 4.375rem;
@@ -142,8 +164,8 @@ $body-color: #fff;
 .owl-carousel .owl-dots .owl-dot.active {
   background: #f15922;
 }
-//test
-///anther test too
 
-//yet another test
-// for test purpose only
+.slider-image img {
+  width: 500px !important;
+  height: auto;
+}

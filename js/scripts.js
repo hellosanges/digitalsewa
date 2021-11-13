@@ -3,7 +3,6 @@ $(".home-slider").owlCarousel({
   loop: true,
   autoplay: true,
   margin: 10,
-  nav: true,
   autoplayHoverPause: true,
   items: 1,
   animateOut: "fadeOut",
@@ -20,3 +19,4 @@ btnHamburger.addEventListener("click", function () {
     btnHamburger.classList.add("open");
   }
 });
+
