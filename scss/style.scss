@@ -83,8 +83,11 @@ $body-color: #fff;
   .owl-carousel .owl-item img {
     margin-top: 0;
   }
+  .overlay-text {
+    background: rgb(255, 255, 255);
+    color: #000;
+  }
 }
-
 @include media-breakpoint-up(md) {
   .header {
     .logo img {
@@ -102,9 +105,12 @@ $body-color: #fff;
     );
     color: black;
     z-index: 100;
+    > p {
+      margin: 5px 45px 20px 45px;
+      text-align: center;
+    }
     > span,
-    h1,
-    p {
+    h1 {
       margin: auto 45px;
       text-align: center;
     }
@@ -117,11 +123,6 @@ $body-color: #fff;
       font-size: 30px;
     }
   }
-  .child {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
 }
 
 @include media-breakpoint-up(lg) {
@@ -130,6 +131,11 @@ $body-color: #fff;
       height: 4.375rem;
       width: auto;
     }
+  }
+  .child {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 @include media-breakpoint-up(xl) {
@@ -149,15 +155,15 @@ $body-color: #fff;
   }
 }
 
+//carousel
 .owl-carousel .owl-dots {
   text-align: center;
 }
 
 .owl-carousel .owl-dots .owl-dot {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 5px;
   margin: 5px;
-  border-radius: 50%;
   background: white;
 }
 
@@ -165,7 +171,25 @@ $body-color: #fff;
   background: #f15922;
 }
 
+.owl-carousel.home-slider .owl-dots {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50);
+  transform: rotate(90deg);
+}
+
 .slider-image img {
-  width: 500px !important;
+  width: 100% !important;
   height: auto;
+}
+
+.explore_button {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -25%);
+}
+
+.overlay-text {
+  margin-bottom: 30px;
 }

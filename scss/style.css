@@ -12039,6 +12039,10 @@ fieldset:disabled .btn {
   .owl-carousel .owl-item img {
     margin-top: 0;
   }
+  .overlay-text {
+    background: white;
+    color: #000;
+  }
 }
 
 @media (min-width: 768px) {
@@ -12053,10 +12057,13 @@ fieldset:disabled .btn {
     color: black;
     z-index: 100;
   }
+  .overlay-text > p {
+    margin: 5px 45px 20px 45px;
+    text-align: center;
+  }
   .overlay-text > span,
   .overlay-text h1,
-  .overlay-text .h1,
-  .overlay-text p {
+  .overlay-text .h1 {
     margin: auto 45px;
     text-align: center;
   }
@@ -12066,18 +12073,18 @@ fieldset:disabled .btn {
   .overlay-text > h1, .overlay-text > .h1 {
     font-size: 30px;
   }
-  .child {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
 }
 
 @media (min-width: 992px) {
   .header .logo img {
     height: 4.375rem;
     width: auto;
+  }
+  .child {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
 }
 
@@ -12101,10 +12108,9 @@ fieldset:disabled .btn {
 }
 
 .owl-carousel .owl-dots .owl-dot {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 5px;
   margin: 5px;
-  border-radius: 50%;
   background: white;
 }
 
@@ -12112,8 +12118,29 @@ fieldset:disabled .btn {
   background: #f15922;
 }
 
+.owl-carousel.home-slider .owl-dots {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  -webkit-transform: translateY(-50);
+          transform: translateY(-50);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
 .slider-image img {
-  width: 500px !important;
+  width: 100% !important;
   height: auto;
+}
+
+.explore_button {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -25%);
+          transform: translate(-50%, -25%);
+}
+
+.overlay-text {
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=style.css.map */
