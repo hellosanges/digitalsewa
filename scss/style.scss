@@ -1,6 +1,6 @@
 $body-bg: #272727;
 $body-color: #fff;
-//importing main files
+$ds-color: #f15922; //importing main files
 @import "../node_modules/bootstrap/scss/bootstrap";
 .nva-link {
   color: #fff;
@@ -192,4 +192,42 @@ $body-color: #fff;
 
 .overlay-text {
   margin-bottom: 30px;
+}
+//footer
+.info_sec {
+  span {
+    display: block;
+    margin: 30px;
+  }
+
+  .copyright-info {
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+  }
+}
+
+//socials-icon
+
+.social-icons {
+  a {
+    color: white;
+    &:hover {
+      color: $ds-color;
+    }
+  }
+}
+.btn-ds {
+  color: #fff;
+  background-color: #f15922;
+  font-weight: bold;
+  border-radius: 2;
+}
+
+.btn-ds:hover,
+.btn-ds:active,
+.btn-ds:focus,
+.btn-ds.active {
+  background: #ff4c0c;
+  color: #fff;
 }
