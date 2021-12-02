@@ -12189,6 +12189,7 @@ fieldset:disabled .btn {
 .form-control,
 .form-control:active {
   background: #fff !important;
+  color: #000;
 }
 
 .form-control:focus {

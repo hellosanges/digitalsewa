@@ -243,8 +243,9 @@ $ds-color: #f15922; //importing main files
 .form-control,
 .form-control:active {
   background: #fff !important;
+  color: #000;
 }
 
 .form-control:focus {
-  box-shadow: 0 0 0 2px rgba(255, 174, 98, 0.808)
+  box-shadow: 0 0 0 2px rgba(255, 174, 98, 0.808);
 }
