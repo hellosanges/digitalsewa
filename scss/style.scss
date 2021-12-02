@@ -2,7 +2,7 @@ $body-bg: #272727;
 $body-color: #fff;
 $ds-color: #f15922; //importing main files
 @import "../node_modules/bootstrap/scss/bootstrap";
-.nva-link {
+.nav-link {
   color: #fff;
 }
 
@@ -210,8 +210,15 @@ $ds-color: #f15922; //importing main files
 //socials-icon
 
 .social-icons {
+  font-size: 25px;
+  list-style: none;
+  padding: 0;
+  display: table;
+  width: 100%;
+
   a {
-    color: white;
+    color: #fff;
+
     &:hover {
       color: $ds-color;
     }
@@ -230,4 +237,14 @@ $ds-color: #f15922; //importing main files
 .btn-ds.active {
   background: #ff4c0c;
   color: #fff;
+}
+
+//contact forms
+.form-control,
+.form-control:active {
+  background: #fff !important;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 2px rgba(255, 174, 98, 0.808)
 }
